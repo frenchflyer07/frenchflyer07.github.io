@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <script src="script/jquery.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/dark_mode.css" id="default_css">
+    <script src="js/import_css.js"></script>
+    <script src="js/import_data.js"></script>
+    
+  </head>
+  <!-- get the school name passed as argument -->
+  <body>
+    <script>
+      //get the school name
+      var school_name = prompt("entrez le nom de l'école (epitech pour le test)");
+      update_data("http://localhost:3000/dashboard_info_api", school_name)</script>
+    <p id="api_result"></p>
+    <p style="display: none;" id="school_name_id"></p>
+    <img class="background" src="img/background_final.png"></img>
+    <p class="percentage" id="school_percentage">25%</p>
+    <div class="school_city_name" id="classment_school">
+    </div>
+    <div class="school_city_score" id="classment_percentage">
+    </div>
+    <p class="time_remaining">5 Jours</p>
+    <img class="qr_code" id="qr_code_elem"></img>
+  </body>
+</html>
